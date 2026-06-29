@@ -287,7 +287,7 @@ For support and questions:
 - Join the community discussions
 
 
-**Built with ❤️ using Z.ai Code Scaffold**
+**Built with: Z.ai Code Scaffold**
 
 
 ## Tech Stack
