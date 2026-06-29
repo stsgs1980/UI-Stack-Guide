@@ -5,17 +5,52 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-cyan)](https://tailwindcss.com/)
 [![shadcn/ui](https://img.shields.io/badge/shadcn/ui-1.0.0-gray)](https://ui.shadcn.com/)
 
+
+## Table of Contents
+
+- [Features](#features)
+- [Quick Start](#quick-start)
+- [Clone the repository](#clone-the-repository)
+- [Install dependencies](#install-dependencies)
+- [or](#or)
+- [or](#or)
+- [Start the development server](#start-the-development-server)
+- [or](#or)
+- [or](#or)
+- [Open http://localhost:3000 to see the application](#open-http:localhost:3000-to-see-the-application)
+- [Development](#development)
+- [Build](#build)
+- [Database](#database)
+- [Code Quality](#code-quality)
+- [Project Structure](#project-structure)
+- [Component Library](#component-library)
+- [Getting Started](#getting-started)
+- [Configuration](#configuration)
+- [Database URL](#database-url)
+- [Authentication (if needed)](#authentication-if-needed)
+- [Generate Prisma client](#generate-prisma-client)
+- [Push database schema](#push-database-schema)
+- [Key Features](#key-features)
+- [AI Development Features](#ai-development-features)
+- [Deployment](#deployment)
+- [Create optimized build](#create-optimized-build)
+- [Start production server](#start-production-server)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support](#support)
+- [Tech Stack](#tech-stack)
+
 **A comprehensive Next.js template optimized for AI-powered development with Z.ai. Built with TypeScript, Tailwind CSS, and shadcn/ui components.**
 
-## ✨ Features
+## Features
 
-### 🚀 Core Stack
+### Core Stack
 - **Next.js 16.1.1** - React framework with App Router
 - **TypeScript 5** - Type-safe JavaScript
 - **React 19** - Latest React features
 - **Tailwind CSS 4** - Utility-first CSS framework
 
-### 🎨 UI Components
+### UI Components
 - **shadcn/ui** - Beautiful, accessible components
 - **Radix UI** - Low-level primitives
 - **Lucide React** - Icon library
@@ -23,7 +58,7 @@
 - **Recharts** - Data visualization
 - **DnD Kit** - Drag and drop functionality
 
-### 🔧 Development Tools
+### Development Tools
 - **ESLint 9** - Code linting
 - **PostCSS** - CSS processing
 - **Prisma** - Database ORM
@@ -31,71 +66,71 @@
 - **React Hook Form + Zod** - Form handling and validation
 - **TanStack Query** - Server state management
 
-### 🌐 Internationalization
+### Internationalization
 - **Next-intl** - Multi-language support
 - **NextAuth 4** - Authentication ready
 
-### 🤖 AI Integration
+### AI Integration
 - **Z-ai-web-dev-sdk** - AI-powered development toolkit
 - **MDX Editor** - AI-enhanced markdown editing
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js 18.17 or later
-- npm or yarn or bun package manager
+- Bun package manager
 
 ### Installation
 
 ```bash
-# Clone the repository
+## Clone the repository
 git clone <repository-url>
 cd ui-stack-guide
 
-# Install dependencies
-npm install
-# or
-yarn install
-# or
+## Install dependencies
+bun install
+## or
+bun install
+## or
 bun install
 ```
 
 ### Development
 
 ```bash
-# Start the development server
-npm run dev
-# or
-yarn dev
-# or
+## Start the development server
+bun run dev
+## or
+bun dev
+## or
 bun dev
 
-# Open http://localhost:3000 to see the application
+## Open http://localhost:3000 to see the application
 ```
 
 ### Available Scripts
 
 ```bash
-# Development
-npm run dev          # Start development server on port 3000
+## Development
+bun run dev          # Start development server on port 3000
 
-# Build
-npm run build        # Create production build
-npm run start        # Start production server
+## Build
+bun run build        # Create production build
+bun run start        # Start production server
 
-# Database
-npm run db:push      # Push database schema
-npm run db:generate  # Generate Prisma client
-npm run db:migrate   # Run migrations
-npm run db:reset     # Reset database
+## Database
+bun run db:push      # Push database schema
+bun run db:generate  # Generate Prisma client
+bun run db:migrate   # Run migrations
+bun run db:reset     # Reset database
 
-# Code Quality
-npm run lint         # Run ESLint
+## Code Quality
+bun run lint         # Run ESLint
 ```
 
-## 📁 Project Structure
+## Project Structure
 
-```
+```css
 /ui stack guide/
 ├── src/
 │   ├── app/                  # Next.js App Router
@@ -117,7 +152,7 @@ npm run lint         # Run ESLint
 └── tsconfig.json          # TypeScript configuration
 ```
 
-## 🎨 Component Library
+## Component Library
 
 The project includes a comprehensive set of UI components from shadcn/ui:
 
@@ -135,17 +170,37 @@ The project includes a comprehensive set of UI components from shadcn/ui:
 - Table, Charts (Recharts)
 - Scroll Area, Aspect Ratio
 
-## 🔧 Configuration
+## Getting Started
+
+### Prerequisites
+
+- Node.js 20+ or Bun
+
+### Installation
+
+```bash
+git clone https://github.com/stsgs1980/UI-Stack-Guide.git
+cd UI-Stack-Guide
+bun install
+```
+
+### Run
+
+```bash
+bun run dev
+```
+
+## Configuration
 
 ### Environment Variables
 
 Create a `.env` file in the root directory:
 
 ```env
-# Database URL
+## Database URL
 DATABASE_URL=file:./db/custom.db
 
-# Authentication (if needed)
+## Authentication (if needed)
 NEXTAUTH_URL=http://localhost:3000
 NEXTAUTH_SECRET=your-secret-key
 ```
@@ -153,14 +208,14 @@ NEXTAUTH_SECRET=your-secret-key
 ### Database Setup
 
 ```bash
-# Generate Prisma client
-npm run db:generate
+## Generate Prisma client
+bun run db:generate
 
-# Push database schema
-npm run db:push
+## Push database schema
+bun run db:push
 ```
 
-## 🎯 Key Features
+## Key Features
 
 ### 1. Responsive Design
 - Mobile-first approach
@@ -182,7 +237,7 @@ npm run db:push
 - Meta tags and Open Graph
 - Analytics ready
 
-## 🤖 AI Development Features
+## AI Development Features
 
 ### Z-ai-web-dev-sdk Integration
 - AI-powered code suggestions
@@ -194,16 +249,16 @@ npm run db:push
 - Real-time preview
 - Collaborative features
 
-## 🚀 Deployment
+## Deployment
 
 ### Build for Production
 
 ```bash
-# Create optimized build
-npm run build
+## Create optimized build
+bun run build
 
-# Start production server
-npm run start
+## Start production server
+bun run start
 ```
 
 ### Environment-Specific Configurations
@@ -212,7 +267,7 @@ npm run start
 - **Database**: SQLite for development, easily switchable to PostgreSQL
 - **Static Assets**: Optimized for CDN serving
 
-## 📝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -220,17 +275,29 @@ npm run start
 4. Run tests and linting
 5. Submit a pull request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
 
-## 🤝 Support
+## Support
 
 For support and questions:
 - Check the documentation
 - Open an issue on GitHub
 - Join the community discussions
 
----
 
 **Built with ❤️ using Z.ai Code Scaffold**
+
+
+## Tech Stack
+
+- **Framework** - Next.js
+- **Language** - TypeScript, JavaScript
+- **Styling** - Tailwind CSS, CSS
+- **Database** - Prisma, PostgreSQL, SQLite
+- **Libraries** - shadcn/ui, Zustand, Framer Motion, Recharts, Zod
+- **Tools** - React, Node.js
+
+---
+Built with: Next.js + React + TypeScript + JavaScript
